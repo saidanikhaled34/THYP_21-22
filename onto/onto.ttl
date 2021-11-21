@@ -8,7 +8,7 @@
 @prefix mo: <http://purl.org/ontology/mo#>.
 
 
-@prefix onto: <https://saidanikhaled34.github.io/THYP_21-22/onto/onto.ttl> .
+@prefix onto: <https://saidanikhaled34.github.io/THYP_21-22/onto/onto#> .
 
 <https://saidanikhaled34.github.io/THYP_21-22/onto/onto.ttl> a owl:Ontology ;
     dcterms:title "E commerce " .
@@ -30,7 +30,7 @@ onto:Facture a rdfs:Class ;
 
 onto:Produit a rdfs:Class ;
     rdfs:label "Produit" ;
-    rdfs:domain o:Resource ;
+    rdfs:domain o:Resource 
     vs:term_status "experimental" .
 
 onto:Vendeurs a rdfs:Class ;
