@@ -8,9 +8,9 @@
 @prefix mo: <http://purl.org/ontology/mo#>.
 
 
-@prefix onto: <https://Ecommerce.univ-paris8.fr/onto/onto#> .
+@prefix onto: <https://saidanikhaled34.github.io/THYP_21-22/onto/onto.ttl> .
 
-<https://Ecommerce.univ-paris8.fr/onto/onto#> a owl:Ontology ;
+<https://saidanikhaled34.github.io/THYP_21-22/onto/onto.ttl> a owl:Ontology ;
     dcterms:title "E commerce " .
 
 onto:Client a rdfs:Class ;
