@@ -1,4 +1,8 @@
 # THYP_21-22
+## lien de ex1
+https://saidanikhaled34.github.io/THYP_21-22/ex1/index.html
+
+
 
 ## lien de onto:
 https://saidanikhaled34.github.io/THYP_21-22/onto/onto.ttl
