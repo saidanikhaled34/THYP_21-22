@@ -7,7 +7,11 @@ https://saidanikhaled34.github.io/THYP_21-22/ex1/index.html
 ## lien de onto:
 https://saidanikhaled34.github.io/THYP_21-22/onto/onto.ttl
 
+## lien vers api omeka (resource_templates) :
 
+http://localhost/omeka-s/api/resource_templates
+http://localhost/omeka-s/api/items
+http://localhost/omeka-s/api/items/1
 
 ## lin de mon projet:
 https://saidanikhaled34.github.io/THYP_21-22/
