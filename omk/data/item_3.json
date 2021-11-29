@@ -1,37 +1,37 @@
 {
     "@context": "http://localhost/omeka-s/api-context",
-    "@id": "http://localhost/omeka-s/api/items/1",
+    "@id": "http://localhost/omeka-s/api/items/3",
     "@type": [
         "o:Item",
-        "green:developpementDurable"
+        "green:recyclageValorisant"
     ],
-    "o:id": 1,
+    "o:id": 3,
     "o:is_public": true,
     "o:owner": {
         "@id": "http://localhost/omeka-s/api/users/1",
         "o:id": 1
     },
     "o:resource_class": {
-        "@id": "http://localhost/omeka-s/api/resource_classes/127",
-        "o:id": 127
+        "@id": "http://localhost/omeka-s/api/resource_classes/128",
+        "o:id": 128
     },
     "o:resource_template": {
-        "@id": "http://localhost/omeka-s/api/resource_templates/2",
-        "o:id": 2
+        "@id": "http://localhost/omeka-s/api/resource_templates/4",
+        "o:id": 4
     },
     "o:thumbnail": null,
-    "o:title": "Développement durable",
+    "o:title": "Objectifs de développement durable",
     "thumbnail_display_urls": {
         "large": null,
         "medium": null,
         "square": null
     },
     "o:created": {
-        "@value": "2021-11-21T20:50:52+00:00",
+        "@value": "2021-11-21T20:55:38+00:00",
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "o:modified": {
-        "@value": "2021-11-21T20:50:52+00:00",
+        "@value": "2021-11-21T20:55:38+00:00",
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "o:media": [],
@@ -43,7 +43,7 @@
             "property_id": 1,
             "property_label": "Title",
             "is_public": true,
-            "@value": "Développement durable"
+            "@value": "Objectifs de développement durable"
         }
     ],
     "dcterms:description": [
@@ -52,14 +52,7 @@
             "property_id": 4,
             "property_label": "Description",
             "is_public": true,
-            "@value": "Le développement durable se définit comme un mode de développement qui répond aux besoins du présent sans compromettre la capacité des générations futures de répondre aux leurs.Feb"
-        },
-        {
-            "type": "literal",
-            "property_id": 4,
-            "property_label": "Description",
-            "is_public": true,
-            "@value": "« Le développement durable est un développement qui répond aux besoins du présent sans compromettre la capacité des générations futures de répondre aux leurs. »"
+            "@value": "Les objectifs de développement durable ou objectifs mondiaux sont un ensemble de 17 objectifs mondiaux interconnectés conçus pour être un « plan directeur pour parvenir à un avenir meilleur et plus durable pour tous ». Les ODD ont été mis en place en 2015 par l'Assemblée générale des Nations Unies et devraient être atteints d'ici 2030."
         }
     ]
 }

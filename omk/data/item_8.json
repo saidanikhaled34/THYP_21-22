@@ -1,0 +1,58 @@
+{
+    "@context": "http://localhost/omeka-s/api-context",
+    "@id": "http://localhost/omeka-s/api/items/8",
+    "@type": [
+        "o:Item",
+        "green:recyclageValorisant"
+    ],
+    "o:id": 8,
+    "o:is_public": true,
+    "o:owner": {
+        "@id": "http://localhost/omeka-s/api/users/1",
+        "o:id": 1
+    },
+    "o:resource_class": {
+        "@id": "http://localhost/omeka-s/api/resource_classes/128",
+        "o:id": 128
+    },
+    "o:resource_template": {
+        "@id": "http://localhost/omeka-s/api/resource_templates/4",
+        "o:id": 4
+    },
+    "o:thumbnail": null,
+    "o:title": "Le secteur du BTP porteur d'enjeux",
+    "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+    },
+    "o:created": {
+        "@value": "2021-11-21T21:03:31+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+        "@value": "2021-11-21T21:03:31+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [],
+    "o:item_set": [],
+    "o:site": [],
+    "dcterms:title": [
+        {
+            "type": "literal",
+            "property_id": 1,
+            "property_label": "Title",
+            "is_public": true,
+            "@value": "Le secteur du BTP porteur d'enjeux\n"
+        }
+    ],
+    "dcterms:description": [
+        {
+            "type": "literal",
+            "property_id": 4,
+            "property_label": "Description",
+            "is_public": true,
+            "@value": "Le secteur de la construction est le premier poste de consommation matière en France. La législation européenne nous impose de valoriser d'ici 2020 au moins 70 % des « déchets non dangereux de construction et de démolition, à l'exclusion des matériaux géologiques naturels ».\n\nLe défi est important. De nombreuses expérimentations dédiées à la valorisation des matériaux du BTP existent déjà dans les territoires. Ces pratiques doivent être valorisées et multipliées sur le territoire français (Consulter les initiatives Cyclabat, Cemex, Siniat, Yprema (ici et là) et ReValo)"
+        }
+    ]
+}

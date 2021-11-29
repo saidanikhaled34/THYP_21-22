@@ -1,0 +1,415 @@
+[
+    {
+        "@context": "http://localhost/omeka-s/api-context",
+        "@id": "http://localhost/omeka-s/api/items/1",
+        "@type": [
+            "o:Item",
+            "green:developpementDurable"
+        ],
+        "o:id": 1,
+        "o:is_public": true,
+        "o:owner": {
+            "@id": "http://localhost/omeka-s/api/users/1",
+            "o:id": 1
+        },
+        "o:resource_class": {
+            "@id": "http://localhost/omeka-s/api/resource_classes/127",
+            "o:id": 127
+        },
+        "o:resource_template": {
+            "@id": "http://localhost/omeka-s/api/resource_templates/2",
+            "o:id": 2
+        },
+        "o:thumbnail": null,
+        "o:title": "Développement durable",
+        "thumbnail_display_urls": {
+            "large": null,
+            "medium": null,
+            "square": null
+        },
+        "o:created": {
+            "@value": "2021-11-21T20:50:52+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:modified": {
+            "@value": "2021-11-21T20:50:52+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:media": [],
+        "o:item_set": [],
+        "o:site": [],
+        "dcterms:title": [
+            {
+                "type": "literal",
+                "property_id": 1,
+                "property_label": "Title",
+                "is_public": true,
+                "@value": "Développement durable"
+            }
+        ],
+        "dcterms:description": [
+            {
+                "type": "literal",
+                "property_id": 4,
+                "property_label": "Description",
+                "is_public": true,
+                "@value": "Le développement durable se définit comme un mode de développement qui répond aux besoins du présent sans compromettre la capacité des générations futures de répondre aux leurs.Feb"
+            },
+            {
+                "type": "literal",
+                "property_id": 4,
+                "property_label": "Description",
+                "is_public": true,
+                "@value": "« Le développement durable est un développement qui répond aux besoins du présent sans compromettre la capacité des générations futures de répondre aux leurs. »"
+            }
+        ]
+    },
+    {
+        "@context": "http://localhost/omeka-s/api-context",
+        "@id": "http://localhost/omeka-s/api/items/3",
+        "@type": [
+            "o:Item",
+            "green:recyclageValorisant"
+        ],
+        "o:id": 3,
+        "o:is_public": true,
+        "o:owner": {
+            "@id": "http://localhost/omeka-s/api/users/1",
+            "o:id": 1
+        },
+        "o:resource_class": {
+            "@id": "http://localhost/omeka-s/api/resource_classes/128",
+            "o:id": 128
+        },
+        "o:resource_template": {
+            "@id": "http://localhost/omeka-s/api/resource_templates/4",
+            "o:id": 4
+        },
+        "o:thumbnail": null,
+        "o:title": "Objectifs de développement durable",
+        "thumbnail_display_urls": {
+            "large": null,
+            "medium": null,
+            "square": null
+        },
+        "o:created": {
+            "@value": "2021-11-21T20:55:38+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:modified": {
+            "@value": "2021-11-21T20:55:38+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:media": [],
+        "o:item_set": [],
+        "o:site": [],
+        "dcterms:title": [
+            {
+                "type": "literal",
+                "property_id": 1,
+                "property_label": "Title",
+                "is_public": true,
+                "@value": "Objectifs de développement durable"
+            }
+        ],
+        "dcterms:description": [
+            {
+                "type": "literal",
+                "property_id": 4,
+                "property_label": "Description",
+                "is_public": true,
+                "@value": "Les objectifs de développement durable ou objectifs mondiaux sont un ensemble de 17 objectifs mondiaux interconnectés conçus pour être un « plan directeur pour parvenir à un avenir meilleur et plus durable pour tous ». Les ODD ont été mis en place en 2015 par l'Assemblée générale des Nations Unies et devraient être atteints d'ici 2030."
+            }
+        ]
+    },
+    {
+        "@context": "http://localhost/omeka-s/api-context",
+        "@id": "http://localhost/omeka-s/api/items/4",
+        "@type": [
+            "o:Item",
+            "green:effetDeSerre"
+        ],
+        "o:id": 4,
+        "o:is_public": true,
+        "o:owner": {
+            "@id": "http://localhost/omeka-s/api/users/1",
+            "o:id": 1
+        },
+        "o:resource_class": {
+            "@id": "http://localhost/omeka-s/api/resource_classes/129",
+            "o:id": 129
+        },
+        "o:resource_template": {
+            "@id": "http://localhost/omeka-s/api/resource_templates/4",
+            "o:id": 4
+        },
+        "o:thumbnail": null,
+        "o:title": "Les technologies numériques, carburants essentiels pour passer à une économie verte",
+        "thumbnail_display_urls": {
+            "large": null,
+            "medium": null,
+            "square": null
+        },
+        "o:created": {
+            "@value": "2021-11-21T20:57:09+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:modified": {
+            "@value": "2021-11-21T20:57:09+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:media": [],
+        "o:item_set": [],
+        "o:site": [],
+        "dcterms:title": [
+            {
+                "type": "literal",
+                "property_id": 1,
+                "property_label": "Title",
+                "is_public": true,
+                "@value": "Les technologies numériques, carburants essentiels pour passer à une économie verte"
+            }
+        ],
+        "dcterms:description": [
+            {
+                "type": "literal",
+                "property_id": 4,
+                "property_label": "Description",
+                "is_public": true,
+                "@value": "Après la crise, les crises. Alors que la pandémie du Covid-19 a des répercussions importantes sur les économies, elle nous exhorte plus que jamais à réévaluer nos modes de pensées. A cet égard, les technologies constituent de puissants leviers de transformation du monde. A l’avant-garde de la construction de la société de demain, elles permettent d’échafauder les piliers d’un modèle plus résilient sur le plan environnemental, estiment Aurélie Jean et Romain Mouton."
+            }
+        ]
+    },
+    {
+        "@context": "http://localhost/omeka-s/api-context",
+        "@id": "http://localhost/omeka-s/api/items/5",
+        "@type": [
+            "o:Item",
+            "green:effetDeSerre"
+        ],
+        "o:id": 5,
+        "o:is_public": true,
+        "o:owner": {
+            "@id": "http://localhost/omeka-s/api/users/1",
+            "o:id": 1
+        },
+        "o:resource_class": {
+            "@id": "http://localhost/omeka-s/api/resource_classes/129",
+            "o:id": 129
+        },
+        "o:resource_template": {
+            "@id": "http://localhost/omeka-s/api/resource_templates/3",
+            "o:id": 3
+        },
+        "o:thumbnail": null,
+        "o:title": "Effet de serre",
+        "thumbnail_display_urls": {
+            "large": null,
+            "medium": null,
+            "square": null
+        },
+        "o:created": {
+            "@value": "2021-11-21T20:59:13+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:modified": {
+            "@value": "2021-11-21T20:59:13+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:media": [],
+        "o:item_set": [],
+        "o:site": [],
+        "dcterms:title": [
+            {
+                "type": "literal",
+                "property_id": 1,
+                "property_label": "Title",
+                "is_public": true,
+                "@value": "Effet de serre"
+            }
+        ],
+        "dcterms:description": [
+            {
+                "type": "literal",
+                "property_id": 4,
+                "property_label": "Description",
+                "is_public": true,
+                "@value": "L'effet de serre est un processus naturel résultant de l'influence de l'atmosphère sur les différents flux thermiques contribuant aux températures au sol d'une planète. La prise en compte de ce mécanisme est nécessaire pour expliquer les températures observées à la surface de la Terre et de Vénus."
+            }
+        ]
+    },
+    {
+        "@context": "http://localhost/omeka-s/api-context",
+        "@id": "http://localhost/omeka-s/api/items/6",
+        "@type": [
+            "o:Item",
+            "green:recyclageValorisant"
+        ],
+        "o:id": 6,
+        "o:is_public": true,
+        "o:owner": {
+            "@id": "http://localhost/omeka-s/api/users/1",
+            "o:id": 1
+        },
+        "o:resource_class": {
+            "@id": "http://localhost/omeka-s/api/resource_classes/128",
+            "o:id": 128
+        },
+        "o:resource_template": {
+            "@id": "http://localhost/omeka-s/api/resource_templates/4",
+            "o:id": 4
+        },
+        "o:thumbnail": null,
+        "o:title": "La hiérarchie des traitement des déchets",
+        "thumbnail_display_urls": {
+            "large": null,
+            "medium": null,
+            "square": null
+        },
+        "o:created": {
+            "@value": "2021-11-21T21:02:30+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:modified": {
+            "@value": "2021-11-21T21:02:30+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:media": [],
+        "o:item_set": [],
+        "o:site": [],
+        "dcterms:title": [
+            {
+                "type": "literal",
+                "property_id": 1,
+                "property_label": "Title",
+                "is_public": true,
+                "@value": "La hiérarchie des traitement des déchets\n"
+            }
+        ],
+        "dcterms:description": [
+            {
+                "type": "literal",
+                "property_id": 4,
+                "property_label": "Description",
+                "is_public": true,
+                "@value": "D'après l'ADEME, le recyclage « vise à utiliser les matières premières issues de déchets ».\n\nPlus précise, la définition du Code de l'environnement caractérise le recyclage comme « toute opération de valorisation par laquelle les déchets, y compris les déchets organiques, sont retraités en substances, matières ou produits aux fins de leur fonction initiale ou à d'autres fins. Les opérations de valorisation énergétique des déchets, celles relatives à la conversion des déchets en combustible et les opérations de remblaiement ne peuvent pas être qualifiées d'opérations de recyclage. »"
+            }
+        ]
+    },
+    {
+        "@context": "http://localhost/omeka-s/api-context",
+        "@id": "http://localhost/omeka-s/api/items/7",
+        "@type": [
+            "o:Item",
+            "green:developpementDurable"
+        ],
+        "o:id": 7,
+        "o:is_public": true,
+        "o:owner": {
+            "@id": "http://localhost/omeka-s/api/users/1",
+            "o:id": 1
+        },
+        "o:resource_class": {
+            "@id": "http://localhost/omeka-s/api/resource_classes/127",
+            "o:id": 127
+        },
+        "o:resource_template": {
+            "@id": "http://localhost/omeka-s/api/resource_templates/4",
+            "o:id": 4
+        },
+        "o:thumbnail": null,
+        "o:title": "Une forte dépendance au prix des matières premières",
+        "thumbnail_display_urls": {
+            "large": null,
+            "medium": null,
+            "square": null
+        },
+        "o:created": {
+            "@value": "2021-11-21T21:03:01+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:modified": {
+            "@value": "2021-11-21T21:03:01+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:media": [],
+        "o:item_set": [],
+        "o:site": [],
+        "dcterms:title": [
+            {
+                "type": "literal",
+                "property_id": 1,
+                "property_label": "Title",
+                "is_public": true,
+                "@value": "Une forte dépendance au prix des matières premières"
+            }
+        ],
+        "dcterms:description": [
+            {
+                "type": "literal",
+                "property_id": 4,
+                "property_label": "Description",
+                "is_public": true,
+                "@value": "Sur le plan économique, une filière de recyclage ne peut être viable que si la matière recyclée est compétitive vis-à-vis de la matière vierge. La baisse conjoncturelle du prix des matières premières est défavorable au secteur. La mise en place d'outils économiques incitatifs en faveur des matières recyclées et la prise en compte des externalités négatives liées à l'extraction de matières vierges doivent permettre de contrebalancer les pertes de marché liées à la fluctuation du prix des matières premières."
+            }
+        ]
+    },
+    {
+        "@context": "http://localhost/omeka-s/api-context",
+        "@id": "http://localhost/omeka-s/api/items/8",
+        "@type": [
+            "o:Item",
+            "green:recyclageValorisant"
+        ],
+        "o:id": 8,
+        "o:is_public": true,
+        "o:owner": {
+            "@id": "http://localhost/omeka-s/api/users/1",
+            "o:id": 1
+        },
+        "o:resource_class": {
+            "@id": "http://localhost/omeka-s/api/resource_classes/128",
+            "o:id": 128
+        },
+        "o:resource_template": {
+            "@id": "http://localhost/omeka-s/api/resource_templates/4",
+            "o:id": 4
+        },
+        "o:thumbnail": null,
+        "o:title": "Le secteur du BTP porteur d'enjeux",
+        "thumbnail_display_urls": {
+            "large": null,
+            "medium": null,
+            "square": null
+        },
+        "o:created": {
+            "@value": "2021-11-21T21:03:31+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:modified": {
+            "@value": "2021-11-21T21:03:31+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:media": [],
+        "o:item_set": [],
+        "o:site": [],
+        "dcterms:title": [
+            {
+                "type": "literal",
+                "property_id": 1,
+                "property_label": "Title",
+                "is_public": true,
+                "@value": "Le secteur du BTP porteur d'enjeux\n"
+            }
+        ],
+        "dcterms:description": [
+            {
+                "type": "literal",
+                "property_id": 4,
+                "property_label": "Description",
+                "is_public": true,
+                "@value": "Le secteur de la construction est le premier poste de consommation matière en France. La législation européenne nous impose de valoriser d'ici 2020 au moins 70 % des « déchets non dangereux de construction et de démolition, à l'exclusion des matériaux géologiques naturels ».\n\nLe défi est important. De nombreuses expérimentations dédiées à la valorisation des matériaux du BTP existent déjà dans les territoires. Ces pratiques doivent être valorisées et multipliées sur le territoire français (Consulter les initiatives Cyclabat, Cemex, Siniat, Yprema (ici et là) et ReValo)"
+            }
+        ]
+    }
+]

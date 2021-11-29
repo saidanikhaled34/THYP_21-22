@@ -1,0 +1,58 @@
+{
+    "@context": "http://localhost/omeka-s/api-context",
+    "@id": "http://localhost/omeka-s/api/items/6",
+    "@type": [
+        "o:Item",
+        "green:recyclageValorisant"
+    ],
+    "o:id": 6,
+    "o:is_public": true,
+    "o:owner": {
+        "@id": "http://localhost/omeka-s/api/users/1",
+        "o:id": 1
+    },
+    "o:resource_class": {
+        "@id": "http://localhost/omeka-s/api/resource_classes/128",
+        "o:id": 128
+    },
+    "o:resource_template": {
+        "@id": "http://localhost/omeka-s/api/resource_templates/4",
+        "o:id": 4
+    },
+    "o:thumbnail": null,
+    "o:title": "La hiérarchie des traitement des déchets",
+    "thumbnail_display_urls": {
+        "large": null,
+        "medium": null,
+        "square": null
+    },
+    "o:created": {
+        "@value": "2021-11-21T21:02:30+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+        "@value": "2021-11-21T21:02:30+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [],
+    "o:item_set": [],
+    "o:site": [],
+    "dcterms:title": [
+        {
+            "type": "literal",
+            "property_id": 1,
+            "property_label": "Title",
+            "is_public": true,
+            "@value": "La hiérarchie des traitement des déchets\n"
+        }
+    ],
+    "dcterms:description": [
+        {
+            "type": "literal",
+            "property_id": 4,
+            "property_label": "Description",
+            "is_public": true,
+            "@value": "D'après l'ADEME, le recyclage « vise à utiliser les matières premières issues de déchets ».\n\nPlus précise, la définition du Code de l'environnement caractérise le recyclage comme « toute opération de valorisation par laquelle les déchets, y compris les déchets organiques, sont retraités en substances, matières ou produits aux fins de leur fonction initiale ou à d'autres fins. Les opérations de valorisation énergétique des déchets, celles relatives à la conversion des déchets en combustible et les opérations de remblaiement ne peuvent pas être qualifiées d'opérations de recyclage. »"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+[
+    {
+        "@context": "http://localhost/omeka-s/api-context",
+        "@id": "http://localhost/omeka-s/api/item_sets/2",
+        "@type": [
+            "o:ItemSet",
+            "green:developpementDurable"
+        ],
+        "o:id": 2,
+        "o:is_public": true,
+        "o:owner": {
+            "@id": "http://localhost/omeka-s/api/users/1",
+            "o:id": 1
+        },
+        "o:resource_class": {
+            "@id": "http://localhost/omeka-s/api/resource_classes/127",
+            "o:id": 127
+        },
+        "o:resource_template": {
+            "@id": "http://localhost/omeka-s/api/resource_templates/2",
+            "o:id": 2
+        },
+        "o:thumbnail": {
+            "@id": "http://localhost/omeka-s/api/assets/1",
+            "o:id": 1
+        },
+        "o:title": "Les trois piliers du développement durable",
+        "thumbnail_display_urls": {
+            "large": "http://localhost/omeka-s/files/asset/48c183f5b5a8c86eada5f9215cca2e7e8084a813.jpeg",
+            "medium": "http://localhost/omeka-s/files/asset/48c183f5b5a8c86eada5f9215cca2e7e8084a813.jpeg",
+            "square": "http://localhost/omeka-s/files/asset/48c183f5b5a8c86eada5f9215cca2e7e8084a813.jpeg"
+        },
+        "o:created": {
+            "@value": "2021-11-21T20:52:03+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:modified": {
+            "@value": "2021-11-21T20:53:41+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:is_open": false,
+        "o:items": {
+            "@id": "http://localhost/omeka-s/api/items?item_set_id=2"
+        },
+        "dcterms:title": [
+            {
+                "type": "literal",
+                "property_id": 1,
+                "property_label": "Title",
+                "is_public": true,
+                "@value": "Les trois piliers du développement durable"
+            }
+        ],
+        "dcterms:description": [
+            {
+                "type": "literal",
+                "property_id": 4,
+                "property_label": "Description",
+                "is_public": true,
+                "@value": "-Environnemental.\n-Social,\n-Économique."
+            }
+        ]
+    }
+]
