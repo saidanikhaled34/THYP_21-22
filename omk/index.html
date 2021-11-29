@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de omeka-s</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Détails des données omeka-s</h1>
+            <p>Projets Omeka-s Promotion 2021 - 2022</p>
+            <div class="row">
+               <div class="col-md-4"></div>
+               <div class="col-md-8">
+                  <button type="button" id="rc-tmp" class="btn btn-primary">Resource templates</button>
+                  <button type="button" id="list-items" class="btn btn-secondary">Lise des items </button>
+               </div>
+            </div>      
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="content">
+               
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.tutorialjinni.com/jquery-csv/1.0.21/jquery.csv.js	"></script>
+<script src="https://cdn.tutorialjinni.com/jquery-csv/1.0.21/jquery.csv.min.js	"></script>
+<script>
+getData = (url) => {
+    return $.ajax({
+        type: 'GET',
+        url : url,
+        crossDomain: true
+    });  
+}
+
+getResourceTeamplates =async () => {
+    let url = "https://saidanikhaled34.github.io/THYP_21-22/omk/data/resource_templates.json";
+    return getData(url);
+}
+
+getItem =async (id) => {
+    let url = `https://saidanikhaled34.github.io/THYP_21-22/omk/data/item_${id}.json`;
+    return getData(url); 
+}
+
+getResourceTeamplate =async (id) => {
+    let url = `https://saidanikhaled34.github.io/THYP_21-22/omk/data/resource_templates_${id}.json`;
+    return getData(url); 
+}
+
+getItems =async () => {
+    let url = "https://saidanikhaled34.github.io/THYP_21-22/omk/data/items_resource_templates.json";
+    return getData(url);
+}
+
+showItems = () =>{
+    getItems().then((res) => {   
+            console.log(res) 
+            $table = `<table id="example" class="table table-striped table-bordered"style="width: 100%">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>type</th>
+                            <th>created At</th>
+                            <th>context</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>`;
+            res.forEach(element => {
+                let $tr = `<tr>
+                                <td>${element['o:id']}</td> 
+                                <td>${element['o:title']}</td> 
+                                <td>${element['@type']}</td> 
+                                <td>${element['o:created']['@value']}</td> 
+                                <td>${element['@context']}</td> 
+                                <th><a href="#" onclick="show(${element['o:id']})">show</a></th>
+                            </tr>`
+                $table += $tr;
+            });  
+            $table += `</tbody>
+                        <tfoot>
+                            <tr>
+                                <th>id</th>
+                                <th>title</th>
+                                <th>type</th>
+                                <th>created At</th>
+                                <th>context</th>
+                                <th>Action</th>
+                            </tr>
+                        </tfoot>
+                    </table>`;
+
+            $('#content').html($table);
+            $('#example').DataTable();      
+        }); 
+}
+
+show = (id) => {
+    getItem(id).then((res) => {  
+        console.log(res)
+        $titleResourceTemp = ''     
+        getResourceTeamplate(res['o:resource_template']['o:id']).then((el) => {
+            $desc = ``;
+                res['dcterms:description'].forEach((d)=>{
+                    $desc += `<h5>${d['property_label']}</h5>`
+                    $desc += `<h5>type : ${d['type']}</h5>`
+                    $desc += `<p>${d['@value']}</p>`
+
+                })
+            $titleResourceTemp = el['o:label'];
+            $data = `
+                <div class="media border p-3">
+                    <div class="media-body">
+                      <h2 style="text-align: center;">Information of item </h2>
+                      <h4>Title :<small> ${res['o:title']}</small></h4>
+                      <h4>Type :<small> ${res['@type']}</small></h4>
+                      <h4>Created At :<small> ${res['o:created']['@value']}</small></h4>
+                      <h4>Is public :<small> ${res['o:is_public']}</small></h4>  
+                      <h4>Resource Template :<small> ${$titleResourceTemp }</small></h4>
+                      ${$desc}    
+                    </div>
+                    <a href="#" onclick="showItems()">back to items</a>
+                </div>
+        `
+        $('#content').html($data);
+         })
+       
+    });
+}
+
+itemsOfResource = (id) => {
+    getItems().then((res) => {   
+            $table = `<table id="example" class="table table-striped table-bordered"style="width: 100%">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>type</th>
+                            <th>created At</th>
+                            <th>context</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>`;
+            res.forEach(element => {
+                if (id == element['o:resource_template']['o:id']) {
+                    let $tr = `<tr>
+                                <td>${element['o:id']}</td> 
+                                <td>${element['o:title']}</td> 
+                                <td>${element['@type']}</td> 
+                                <td>${element['o:created']['@value']}</td> 
+                                <td>${element['@context']}</td> 
+                                <th><a href="#" onclick="show(${element['o:id']})">show</a></th>
+                            </tr>`
+                    $table += $tr;
+                }   
+            });  
+            $table += `</tbody>
+                        <tfoot>
+                            <tr>
+                                <th>id</th>
+                                <th>title</th>
+                                <th>type</th>
+                                <th>created At</th>
+                                <th>context</th>
+                                <th>Action</th>
+                            </tr>
+                        </tfoot>
+                    </table>`;
+
+            $('#content').html($table);
+            $('#example').DataTable();      
+        }); 
+}
+
+$(document).ready( function () {
+// show list of resource teamplate
+    $('#rc-tmp').click(()=>{    
+        getResourceTeamplates().then((res) => {   
+            console.log(res) 
+            $table = `<table id="example" class="table table-striped table-bordered"style="width: 100%">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>label</th>
+                            <th>type</th>
+                            <th>number of property</th>
+                            <th>context</th>
+                            <th>items</th>
+                        </tr>
+                    </thead>
+                    <tbody>`;
+            res.forEach(element => {
+                let $tr = `<tr>
+                                <td>${element['o:id']}</td> 
+                                <td>${element['o:label']}</td> 
+                                <td>${element['@type']}</td> 
+                                <td>${element['o:resource_template_property'].length}</td> 
+                                <td>${element['@context']}</td> 
+                                <th><a href="#" onclick="itemsOfResource(${element['o:id']})">show</a></th>
+                            </tr>`
+                $table += $tr;
+            });  
+            $table += `</tbody>
+                        <tfoot>
+                            <tr>
+                                <th>id</th>
+                                <th>label</th>
+                                <th>type</th>
+                                <th>number of property</th>
+                                <th>context</th>
+                                <th>items</th>
+                            </tr>
+                        </tfoot>
+                    </table>`;
+            $('#content').html($table);
+            $('#example').DataTable();      
+        }); 
+    });
+
+    // show list of items
+    $('#list-items').click(()=>{    
+        showItems();
+    });
+
+} );
+</script>
+</body>
+</html>
