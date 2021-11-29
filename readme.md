@@ -1,13 +1,21 @@
 # THYP_21-22
 ## lien de ex1
+
 https://saidanikhaled34.github.io/THYP_21-22/ex1/index.html
 
-
+## lien de omk
+https://saidanikhaled34.github.io/THYP_21-22/omk/
 
 ## lien de onto:
 https://saidanikhaled34.github.io/THYP_21-22/onto/onto.ttl
 
 ## lien vers api omeka (resource_templates) :
+
+http://localhost/omeka-s/api/items/1
+
+http://localhost/omeka-s/api/items/2
+
+http://localhost/omeka-s/api/items/3
 
 http://localhost/omeka-s/api/resource_templates
 
